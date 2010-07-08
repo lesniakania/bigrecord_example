@@ -7,7 +7,6 @@ class Post < BigRecord::Base
 
   index :username
   index :title
-  index :content
 
   validates_presence_of :username, :title
 

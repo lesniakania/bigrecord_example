@@ -28,3 +28,8 @@ example app using Apache Cassandra with Bigrecord and Bigindex
 # Indexes
 
 * if you add new/modify indexes run `rake bigindex:rebuild_index`
+
+# Examples
+
+* blog is simple and finds only by id but there are specified indexes for post's title and username
+* if you want to search by title type: `Post.find(:first, :conditions => { :title => 'some_title' })`
