@@ -2,24 +2,24 @@
 
 example app using Apache Cassandra with Bigrecord and Bigindex
 
-# Requirements
+## Requirements
 
 * ruby 1.8.7 >= 0
 * rubygems 1.3.7
 * rails 2.3.5
 
-# Dependencies
+## Dependencies
 
 * bundler
 * Apache Cassandra
 
-# Configuration
+## Configuration
 
 * copy bigrecord.yml.example to bigrecord.yml
 * copy bigindex.yml.example to bigindex.yml
 * `bundle install`
 
-# Running
+## Running
 
 * run Cassandra by `apache-cassandra-dir/bin/cassandra -f`
 * to use Bigindex run `rake bigindex:solr:start`
@@ -29,7 +29,7 @@ example app using Apache Cassandra with Bigrecord and Bigindex
 
 * if you add new/modify indexes run `rake bigindex:rebuild_index`
 
-# Examples
+## Examples
 
 * blog is simple and finds only by id but there are specified indexes for post's title and username
 * if you want to search by title type: `Post.find(:first, :conditions => { :title => 'some_title' })`
