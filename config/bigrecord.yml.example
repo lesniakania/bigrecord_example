@@ -1,0 +1,8 @@
+
+development:
+  adapter:  cassandra
+  keyspace: cassandras_dream
+  servers:  127.0.0.1:9160
+
+
+  
